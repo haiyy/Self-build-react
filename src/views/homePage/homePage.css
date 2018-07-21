@@ -1,0 +1,139 @@
+.home {
+    width: 90%;
+    height: 100%;
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 5%;
+}
+
+.home>.top {
+    width: 90%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5% 0;
+    flex-shrink: 0;
+}
+.home>.top>div{
+    width: 25%;
+    height: 100%; 
+}
+.home>.top>div>p{
+    width: 100%;
+    text-align: center;
+    line-height: 2rem;
+}
+.home>section {
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    background: #fff;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn h4,
+.btn p {
+    width: 100%;
+    text-align: center;
+}
+
+.topBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0 5px;
+    justify-content: space-between;
+    margin: 5% 0;
+    border-bottom: 1px solid #ccc;
+    flex-shrink: 0;
+}
+
+.topBox .Calendar {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topBox .Calendar>span {
+    display: block;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.car {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.ant-card-bordered {
+    width: 20%;
+    height: 100%;
+    margin: 0 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ant-card-body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ant-card-body p:first-child {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ant-card-body p:nth-child(2) {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.active {
+    border-bottom: 1px solid #9393ff;
+}
+
+.home section .graph {
+    width: 80%;
+    height: calc(100%-3rem);
+    margin-left: 10%;
+    position: relative;
+    margin: 0 10%;
+    flex-grow: 1;
+}
+
+.home section .graph>div {
+    width: 100%;
+    height: 100%;
+}

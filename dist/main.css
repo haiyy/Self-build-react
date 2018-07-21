@@ -1,0 +1,344 @@
+.btn{
+    width: 35%;
+    height: auto;
+    background: #fff;
+}
+
+
+.home {
+    width: 90%;
+    height: 100%;
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 5%;
+}
+
+.home>.top {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.home>section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+    /*margin-top:50%;*/
+}
+
+.btn h4,
+.btn p {
+    width: 100%;
+    text-align: center;
+}
+
+.topBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.topBox .Calendar {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topBox .Calendar>span {
+    display: block;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.car {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ant-card-bordered {
+    width: 20%;
+    height: 100%;
+    margin: 0 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ant-card-body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ant-card-body p:first-child {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ant-card-body p:nth-child(2) {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.active {
+    border-bottom: 1px solid #9393ff;
+}
+
+.home section .graph {
+    width: 80%;
+    height: 200px;
+    margin-left: 10%;
+    position: relative;
+    margin: 0 10%;
+}
+
+.home section .graph>div {
+    width: 100%;
+    height: 100%;
+}
+.warp {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.warp .router header {
+    width: 80%;
+    height: 2rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    background: #fff;
+}
+
+.warp .router header>button {
+    margin: 0 5px;
+}
+
+.router {
+    width: 80%;
+    height: 100%;
+    background: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    width: 20%;
+    height: 100%;
+}
+.login {
+    width: 100%;
+    height: 100%;
+    background: url("/static/images/back.jpg");
+    background-size: 100% 100%;
+    overflow: hidden;
+    /*position: relative;*/
+}
+
+.login>.login>header {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.login>header>h4 {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.login>.Loadtop {
+    width: 23rem;
+    height: auto;
+    color: #fff;
+    display: flex;
+    position: absolute;
+    left: 29%;
+    top: 14%;
+}
+
+.Loadtop>div {
+    width: 10rem;
+    height: auto;
+}
+
+.Loadtop>div>img {
+    width: 10rem;
+    height: auto;
+}
+.images{
+    animation: spin 1s linear infinite;
+}
+/*定义动画*/
+
+@-webkit-keyframes spin {
+    /*兼容性写法。spin是关键帧的动画名称*/
+    from {
+        /*动画起始状态*/
+        -webkit-transform: translateY(0rem);
+    }
+    to {
+        /*动画结束状态*/
+        -webkit-transform: translateY(3rem);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: translateY(3rem);
+    }
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+.Loadtop div:nth-child(2) {
+    width: 12rem;
+    height: 100%;
+    text-align: center;
+}
+
+.Loadtop div:nth-child(2) h1,
+.Loadtop div:nth-child(2) h4 {
+    color: #fff;
+}
+
+.form {
+    position: absolute;
+    left: 65%;
+    top: 14%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20rem;
+    height: auto;
+    background: #ffffff;
+    border-radius:10px;
+}
+
+.form h3 {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    border: 1px solid #ccc;
+}
+
+.form div {
+    width: 90%;
+    height: 2.5rem;
+    margin: .8rem 5%;
+    border: 1px solid #ccc;
+}
+
+.form div:nth-child(6) {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+}
+
+.form div:nth-child(6) button {
+    border: none;
+    background: none;
+}
+
+.form div:nth-child(5) button {
+    width: 100%;
+    height: 100%;
+    background: #0000ff;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2.5rem;
+    border: none;
+}
+
+.form div input {
+    border: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    line-height: 2.5rem;
+}
+
+.form div button {
+    border: 1px solid #ccc;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden
+}
+
+a {
+  font-size: 16px;
+  text-decoration:none;
+  color:#fff;
+}
+
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+a:active{
+  color: red;
+}
+
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+#root{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
